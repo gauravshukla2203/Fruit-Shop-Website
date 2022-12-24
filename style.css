@@ -21,7 +21,7 @@ body{
     display: inline-block;
     padding: 1em 2.5em;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
     outline: none;
     margin-top:1em ;
@@ -35,10 +35,11 @@ body{
     transition: background 0.3s ease-in-out;
 }
 .btn-primary:hover{
-    background-color: transparent;
-    color: #000;
+    background-color:#7c7c7c;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     border-color: black;
+    font-weight: 500;
 
 }
 /* ################################ navbar styling ##################################### */
@@ -85,7 +86,7 @@ body{
 .navbar a:hover{
     color: #112179;
 }
-/* ######################showcase styling###################### */
+/* ######################Homepage styling###################### */
 .homearea{
     height: 50vh;
     background:linear-gradient(rgba(240,240,240,0.144),rgba(255,255,255,0.336)) ,url("./img/home-page.jpg");
@@ -175,7 +176,7 @@ body{
 }
 .fruit-container img{
     display: block;
-    width: 100%;
+    width:80%;
     margin: auto;
     max-height: 300px;
     object-fit: cover;
@@ -213,7 +214,7 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.871);
+    background: rgba(187, 181, 181, 0.871);
     opacity: 0;
     z-index: 1;
     transform: scaleY(0);
@@ -469,7 +470,8 @@ body{
     }
     .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line2{
         transform: scaleY(0);
-    }.navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
+    }
+    .navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
     .fruit-container{
@@ -497,12 +499,12 @@ body{
         flex-direction: column;
         text-align: center;
     }
-    .food-menu-item{
+    .fruit-menu-item{
         flex-direction: column;
         text-align: center;
 
     }
-    .food-menu-container img{
+    .fruit-menu-container img{
         margin: auto;
     }
     .form-container{
@@ -521,7 +523,7 @@ body{
 /* landscape mode */
 @media (orientation: landscape) and (max-height:500px){
     .showcase-area{
-        border
+       height: 100vh;
     }
 
 }
