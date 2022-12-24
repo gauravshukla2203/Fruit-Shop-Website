@@ -32,6 +32,7 @@ body{
 .btn-primary{
     color: #fff;
     background: black;
+    transition: background 0.3s ease-in-out;
 }
 .btn-primary:hover{
     background-color: transparent;
@@ -380,7 +381,7 @@ body{
     background:rgb(65,65,65)
 }
 /* -------------------media queries---------------- */
-@media(max-width: 768px){
+@media(max-width: 750px){
     .navbar{
         opacity: 0.95;
     }
@@ -396,7 +397,7 @@ body{
     .navbar-container input[type='checkbox']{
         position: absolute;
         display: block;
-        height: 32px;
+        height: 52px;
         width: 60px;
         top: 10px;
         left: 10px;
@@ -405,8 +406,8 @@ body{
     }
     .navbar-container .hamburger-lines{
         display: block;
-        height: 40px;
-        width: 32px;
+        height: 32px;
+        width: 45px;
         position: absolute;
         top: 20px;
         z-index: 2;
@@ -470,6 +471,57 @@ body{
         transform: scaleY(0);
     }.navbar-container input[type='checkbox']:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
+    }
+    .fruit-container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .fruit-type:not(:last-child){
+        margin-bottom: 3rem;
+    }
+    .fruit-type{
+        box-shadow: 5px 5px 10px 0px #aaa;
+
+    }
+    .img-container{
+        margin: 0;
+    }
+
+}
+/* --------------small screen------------ */
+@media(max-width :500px){
+    html{
+        font-size: 50%;
+    }
+    .testimonial-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .food-menu-item{
+        flex-direction: column;
+        text-align: center;
+
+    }
+    .food-menu-container img{
+        margin: auto;
+    }
+    .form-container{
+        width:90%;
+
+    }
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-image{
+        width: 90%;
+        margin: 3rem auto;
+    }
+}
+/* landscape mode */
+@media (orientation: landscape) and (max-height:500px){
+    .showcase-area{
+        border
     }
 
 }
